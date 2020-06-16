@@ -1,0 +1,57 @@
+@keyframes fadeInOut {
+  0% {opacity: 0;}
+  25% {opacity: 1;}
+  75% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+.fade-in-out-tran {
+  animation-name: fadeInOut;
+  animation-duration: 4s;
+}
+
+.example-container {
+  height: 15.6rem;
+  overflow: auto;
+}
+
+.image-fit {
+  height: 10rem;
+  width: 10rem;
+}
+
+.toPointerCursor {
+  cursor: pointer;
+}
+
+.hideItem {
+  visibility: hidden;
+}
+
+.bg-purple {
+  background-color: #800080;
+  color: white;
+}
+.bg-purple:hover {
+  color: #800080;
+  background-color: white;
+  border: 1px solid #800080;
+}
+
+.w-15 {
+  width: 15%;
+}
+.w-0{
+  width: 0%;
+}
+
+td {
+  border: 1px solid #e0e0e0;
+}
+th {
+  color: black;
+  background-color: #D3D3D3;
+  border-top: 1px solid #A9A9A9;
+  border-right: 1px solid #A9A9A9;
+  border-left: 1px solid #A9A9A9;
+}

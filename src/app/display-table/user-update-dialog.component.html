@@ -1,0 +1,20 @@
+<h1 mat-dialog-title>Change Name or Role</h1>
+<div mat-dialog-content>
+  <mat-form-field>
+    <mat-label>Name</mat-label>
+    <input matInput [(ngModel)]="data.name">
+  </mat-form-field><br>
+  <mat-form-field>
+    <mat-label>Role</mat-label>
+    <mat-select [(ngModel)]="data.role">
+      <mat-option value="Admin">Admin</mat-option>
+      <mat-option value="Developer">Developer</mat-option>
+      <mat-option value="Manager">Manager</mat-option>
+      <mat-option value="QA">QA</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancel</button>
+  <button mat-button [mat-dialog-close]="{name: data.name, role: data.role}">Change</button>
+</div>

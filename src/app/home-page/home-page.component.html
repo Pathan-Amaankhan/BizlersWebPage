@@ -1,0 +1,18 @@
+<div class="row" (window:resize)="getWidth($event)" [style.width]="widthOfPage">
+  <mat-drawer-container autosize>
+    <mat-drawer mode="over" class="bg-light" #drawer>
+      <app-main-nav></app-main-nav>
+    </mat-drawer>
+    <mat-drawer-content>
+      <div class="row">
+        <div class="col-12">
+          <app-main-header [drawer]="drawer"></app-main-header>
+        </div>
+        <div class="col-12">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </mat-drawer-content>
+  </mat-drawer-container>
+</div>
+
