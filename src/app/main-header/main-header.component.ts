@@ -14,15 +14,13 @@ export class MainHeaderComponent implements OnInit {
 
   constructor() {
     this.widthOfPage = window.innerWidth;
-    console.log(this.widthOfPage);
   }
   getWidth(val){
     this.widthOfPage = val.target.innerWidth;
-    console.log(this.widthOfPage);
   }
 
   sufficientWidth() {
-    return (this.widthOfPage>=768);
+    return (this.widthOfPage >= 768);
   }
 
   ngOnInit(): void {
